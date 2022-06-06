@@ -11,6 +11,8 @@ fork this repository and follow the steps below
     i.e. create a branch called `change-a`
     ```BASH
     $ git checkout -B change-a
+    $ git push --set-upstream origin change-a
+    $ git push --set-upstream origin change-a
     $ cat file.txt   
     one
     two
@@ -21,10 +23,13 @@ fork this repository and follow the steps below
     $ git push
     ```
 
-2. checkout out a new branch and make a change `file.txt`.
-
+2. Checkout out a new branch off of master and make a change to the `file.txt` that is different than the change made in step 1, but on the same line.
+    
+    i.e. 
     ```BASH
-    $ git checkout 
+    $ git checkout master
+    $ git checkout -B change-b
+    $ git push --set-upstream origin change-b
     $ cat file.txt
     one
     two
@@ -32,7 +37,7 @@ fork this repository and follow the steps below
     change-b # add this line to file.txt
     $ git add file.txt
     $ git commit -m "change-b: made a change to file.txt"
-    $ git push
+    $ git push --set-upstream origin change-a # only need to do this
     ```
 
 
