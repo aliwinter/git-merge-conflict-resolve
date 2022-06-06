@@ -2,9 +2,10 @@
 
 This repository is meant to practise the process of resolving merge conflicts
 
-fork this repository and follow the steps below
+fork this repository and follow the steps below.
 
 # Steps:
+
 
 1. Create a new branch and add a new line to the `file.txt`.
 
@@ -37,6 +38,12 @@ fork this repository and follow the steps below
     $ git add file.txt # add this file to the commit
     $ git commit -m "change-b: made a change to file.txt" # create a commit message
     $ git push
+    ```
+
+3. Merge merge main onto change-a branch:
+
+    ```
+    $~ git merge --onto main
     ```
 
 
