@@ -11,9 +11,16 @@ fork this repository and follow the steps below.
 
     i.e. create a branch called `change-a`
     ```BASH
+<<<<<<< HEAD
     $ git checkout -B change-a # make a new branch
     $ git push --set-upstream origin change-a # push branch to remote
     $ cat file.txt  # update file.txt
+=======
+    $ git checkout -B change-a
+    $ git push --set-upstream origin change-a
+    $ git push --set-upstream origin change-a
+    $ cat file.txt   
+>>>>>>> change-a
     one
     two
     three
@@ -27,17 +34,24 @@ fork this repository and follow the steps below.
     
     i.e. 
     ```BASH
+<<<<<<< HEAD
     $ git checkout main # go back to your main branch
     $ git checkout -B change-b # checkout a new branch with name change-b
     $ git push --set-upstream origin change-b # push this new branch to remote
     $ cat file.txt # make a change to this file in same place as step 1
+=======
+    $ git checkout master
+    $ git checkout -B change-b
+    $ git push --set-upstream origin change-b
+    $ cat file.txt
+>>>>>>> change-a
     one
     two
     three
     change-b # add this line to file.txt
-    $ git add file.txt # add this file to the commit
-    $ git commit -m "change-b: made a change to file.txt" # create a commit message
-    $ git push
+    $ git add file.txt
+    $ git commit -m "change-b: made a change to file.txt"
+    $ git push --set-upstream origin change-a # only need to do this
     ```
 
 3. Merge merge main onto change-a branch:
