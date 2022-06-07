@@ -43,8 +43,15 @@ fork this repository and follow the steps below.
 3. Merge merge main onto change-a branch:
 
     ```
-    $~ git merge --onto main
+    $~ git checkout main
+    $~ git merge --onto change-a # merge change-a branch onto main
+    $~ git push
     ```
 
+4. Now try to merge Branch Be.  (This should cause a conflict)
+
+    ```
+    $~ git merge --onto change-b
+    ```
 
 
