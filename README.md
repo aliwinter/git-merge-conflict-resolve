@@ -66,6 +66,20 @@ fork this repository and follow the steps below.
 
     ```
     $~ git merge change-b
+    Auto-merging file.txt
+    CONFLICT (content): Merge conflict in file.txt
+    Automatic merge failed; fix conflicts and then commit the result.
     ```
+
+    you should now see a a merge conflict within the change-b branch should look something like this.
+    ```
+    # file.txt
+    <<<<<<< HEAD
+    change-a
+    =======
+    change-b
+    >>>>>>> change-b
+    ```
+    Resolve this by going into the file and choosing the change. the HEAD shows the latest changes within the branch you are merging to ( in this case the main branch) this is known as Current Changes because these changes are currently on the branch we are merging onto.  The changes below the `=======` are known as the Incoming changes (in this case the change-b branch).
 
 
