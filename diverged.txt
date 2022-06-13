@@ -1,4 +1,5 @@
 Use this file to test fixing diverged branches
 local changes made here
 remote branch changes
-local branch changes
+local branch changes 2
+remote branch changes 2
